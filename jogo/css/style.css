@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:0;
+    
+    
+}
+body{
+    background-color:rgb(107, 101, 101) ;
+    
+
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+        
+    
+}
+
+
+.fundo{
+    height: 500px;
+    width: 100%;
+    
+}
+
+.tubo {
+    position: absolute;
+    bottom: -6;
+    width: 80px;
+    animation: tubo-animacao 3s infinite linear;
+}
+/*.goomba {
+    position: absolute;
+    bottom:-22;
+    width: 120px;
+    animation: goomba-animacao 3s infinite linear;
+}*/
+
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+   
+}
+
+.jump{
+ animation: jump 500ms  ease-out;
+
+}
+
+.clouds{
+    position: absolute;
+    width: 400px;
+    animation: clouds 10s infinite linear;
+
+}
+
+.nuvens{
+    position: absolute;
+    margin: 210;
+    width: 300px;
+    height: 100;
+    top: -45;
+    right: 45;
+    animation: clouds 15s infinite linear;
+
+}
+
+
+button{
+    transform: scale(1);
+    margin-right: auto;
+    position: absolute;
+    width:100;
+    top: 669;
+    left: 500;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    padding: 15px;
+    font-size: 16px;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    display: flex;
+    transition: background-color 0.3s, transforma 0.1s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.button img{
+    margin-right: 10px;
+}
+button:hover{
+    background-color:rgb(227, 239, 239);
+}
+button:active{
+    transform: scale(1.98);
+    box-shadow: 0 3px 4px rgb(0, 0, 0);
+}
+
+
+
+
+
+@keyframes tubo-animacao {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+@keyframes goomba-animacao {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
+@keyframes jump {
+    0%{ 
+        bottom: 0;
+
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{ 
+        bottom: 190px;
+
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{ 
+        bottom: 0;
+
+    }
+    
+}
+
+@keyframes clouds {
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
+@keyframes nuvem {
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
+
